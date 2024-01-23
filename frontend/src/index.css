@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --training: #facc15;
+    --match: #60a5fa;
+    --match-frendly: #4ade80;
+    --other: #94a3b8;
+
+    --light-training: #fde047;
+    --light-match: #93c5fd;
+    --light-match-frendly: #86efac;
+    --light-other: #cbd5e1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card {
+    background-color: #191c24;
+    border-radius: 5px;
+    color: white;
+}
+
+.fontLogo {
+    font-family: 'DM Serif Display', serif;
+}
+
+
+/* SLIDER / SCROLLBAR / THUMB  */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    color: var(--match-frendly);
+    background-color: rgb(92, 88, 88);
+}
