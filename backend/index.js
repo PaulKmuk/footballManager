@@ -7,7 +7,12 @@ import cors from "cors"
 import multer from "multer"
 
 const app = express()
-app.use(cors())
+// app.use(cors())
+app.use(cors({
+	origin: 'https://client-football.onrender.com',
+	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+	credentials: true
+}));
 app.use(express.json())
 
 

@@ -1,6 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-// import config from "../config";
-// import { defineConfig } from "vite";
 import axios from "axios"
 
 export const AuthContext = createContext()
