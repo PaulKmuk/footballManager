@@ -40,6 +40,8 @@ app.get('/', (req, res) => {
 	res.send('Server Working!')
 })
 
+app.options('*', cors());
+
 
 app.listen(8800, () =>{
    console.log("Connected from server, port:8800");
