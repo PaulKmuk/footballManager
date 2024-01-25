@@ -15,7 +15,8 @@ export const AuthContextProvider = ({ children }) => {
     }
 
     const register = async (newUser) => {
-        await axios.post("http://localhost:8800/auth/login", newUser)
+        // await axios.post("http://localhost:8800/auth/login", newUser)
+        await axios.post("https://api.render.com/deploy/srv-cmp15beg1b2c73f7vd30?key=Qxg5K-8sMFo/auth/login", newUser)
     }
 
     const logout = () => {
@@ -28,7 +29,7 @@ export const AuthContextProvider = ({ children }) => {
     },[currentUser])
 
     return (
-        <AuthContext.Provider value={{ currentUser, login, logout }}>
+        <AuthContext.Provider value={{ currentUser, login, logout, register }}>
             {children}
         </AuthContext.Provider>
     )
