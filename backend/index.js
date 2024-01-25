@@ -36,6 +36,10 @@ app.use("/players", playersRoutes)
 app.use("/events", eventsRoutes)
 app.use("/attend", attendRoutes)
 
+app.get('/', (req, res) => {
+	res.send('Server Working!')
+})
+
 
 app.listen(8800, () =>{
    console.log("Connected from server, port:8800");
