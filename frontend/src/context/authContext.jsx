@@ -9,7 +9,7 @@ export const AuthContextProvider = ({ children }) => {
 
     const login = async (user) => {
         // const res = await axios.post("http://localhost:8800/auth/login", user)
-        const res = await axios.post("https://api.render.com/deploy/srv-cmp15beg1b2c73f7vd30?key=Qxg5K-8sMFo/auth/login", user)
+        const res = await axios.post("/auth/login", user)
         console.log(res);
         setCurrentUser(res.data)
     }
