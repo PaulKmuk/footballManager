@@ -32,7 +32,7 @@ const ModalAddEvent = ({ date, setContentView }) => {
 
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     let time = `${date.year}-${date.month}-${date.day} ${event.date}:00`
     const newEvent = {
       ...event,
