@@ -29,6 +29,7 @@ app.post("/upload", upload.single("imgPlayer"), (req, res) => {
 	res.status(200).json(req.file.filename)
 })
 
+app.options('*', cors());
 
 // --- Routes ---
 app.use("/auth", authRoutes)
@@ -40,7 +41,6 @@ app.get('/', (req, res) => {
 	res.send('Server Working!')
 })
 
-app.options('*', cors());
 
 
 app.listen(8800, () =>{

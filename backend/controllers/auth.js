@@ -50,6 +50,7 @@ export const login = (req, res) => {
         // destrukturyzacja obiektu i wyciągnięcie z niego hasła
         const {password, ...other} = data[0]
 
+        res.header('Access-Control-Allow-Origin', '*');
         res.cookie("access_token", token, {
             httpOnly: true,
             expiresIn: '1h',
